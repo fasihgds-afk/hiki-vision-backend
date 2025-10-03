@@ -48,7 +48,7 @@ app.get('/console', (req, res) => {
 });
 
 // ---- ROUTES ----
-app.use('/api', attendanceRoutes);
+app.use('/', attendanceRoutes);
 app.use('/api/employees', employeeRoutes);
 app.use('/api/console', consoleRoutes);
 app.use('/api/shifts', shiftRoutes);
